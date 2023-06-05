@@ -1,0 +1,8 @@
+{
+  "label": "Nodes",
+  "position": 4,
+  "link": {
+    "id": "nodes-index",
+    "type": "doc"
+  }
+}

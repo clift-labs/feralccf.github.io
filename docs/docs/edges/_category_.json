@@ -1,0 +1,8 @@
+{
+  "label": "Edges",
+  "position": 5,
+  "link": {
+    "id": "edges-index",
+    "type": "doc"
+  }
+}
