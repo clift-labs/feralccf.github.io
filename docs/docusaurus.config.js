@@ -12,7 +12,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://cliftlabs.com',
+  url: 'https://feralccf.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -20,7 +20,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'clift-labs', // Usually your GitHub org/user name.
-  projectName: 'clift-labs.github.io', // Usually your repo name.
+  projectName: 'feralccf.github.io', // Usually your repo name.
   deploymentBranch: "deployment",
   trailingSlash: false,
   // _github-pages-challenge-gclift
