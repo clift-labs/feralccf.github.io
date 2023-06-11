@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[4121],{8070:a=>{a.exports=JSON.parse('[{"label":"Category:Data","permalink":"/docs/tags/category-data","count":10},{"label":"Package:Core","permalink":"/docs/tags/package-core","count":14},{"label":"Category:Flow","permalink":"/docs/tags/category-flow","count":4}]')}}]);
