@@ -1,0 +1,8 @@
+{
+  "label": "CatalogNode",
+  "position": 5,
+  "link": {
+    "id": "catalognode-index",
+    "type": "doc"
+  }
+}

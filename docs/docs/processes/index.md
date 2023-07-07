@@ -5,11 +5,17 @@ title: Processes
 
 ## What is a Process?
 
-A process is a collection of nodes that perform work and return a result. These results are used to map the process flow to the next node. This process continues until the end node is reached.
+A process is a well-defined configuration and reusable code that can be driven by other 
+activities in an application. A process can be run from the command line or driven by
+a web controller, a queue handler, or any other driver. 
+
+A process is a collection of reusable nodes that perform work based on a context and 
+return a result. These results are used to map the process engine to move to the next 
+node. This node processing / results activity continues until the end node is reached.
 
 ## Nodes
 
-A node is actually a three tired structured consisting of NodeCode that actually processes information and uses configuration from the catalog node and process node levels. The NodeCode instance receives the configuration from it's Catalog Node and Process node when it's built then during process run time, the node receives the context which contains the data to be processed.
+A node is actually a three-tier-structure consisting of NodeCode that actually processes information and uses configuration from the catalog node and process node levels. The NodeCode instance receives the configuration from it's Catalog Node and Process node when it's built then during process run time, the node receives the context which contains the data to be processed.
 
 ```
   Process Node
@@ -23,7 +29,8 @@ A node is actually a three tired structured consisting of NodeCode that actually
   NodeCode
 ```
 
-For more information on Nodes, [see Nodes](./nodes)
+[**Read More** about Nodes](./nodes)
+
 
 ## Edges
 
@@ -44,15 +51,25 @@ graph LR;
     NODE_C-->|ok|NODE_D;
 ```
 
-For more information on edges, [see Edges](./edges)
+[**Read More** about Edges](./edges)
 
 ## Results
 
-After the Node processes the context and any activities performed with the node, the result object is returned to the process engine. The results consist of status and a message. The status is used to route the process flow to the next node and the message is used for observability of the operation of the process.
+After the Node processes the context and any activities performed with the node, the 
+result object is returned to the process engine. The results consist of status and a 
+message. The status is used to route the process flow to the next node and the message 
+is used for observability of the operation of the process.
+
+[**Read More** about Results](./results)
 
 ## Context
 
-The context is the data store which hold information passed between nodes in the process. The context is a simple key/value storage system but can hold arrays, scalars, and objects as values. The initial context can hold values from the process driver such as the command line runner or the controller action.
+The context is the data store which hold information passed between nodes in the 
+process. The context is a simple key/value storage system but can hold arrays, 
+scalars, and objects as values. The initial context can hold values from the process 
+driver such as the command line runner or the controller action.
+
+[**Read More** about Context](./context)
 
 ## Events
 
@@ -63,3 +80,5 @@ Events
 * Process Node Before
 * Process Node End
 * Process Node Exception
+
+[**Read More** about Events](./events)
