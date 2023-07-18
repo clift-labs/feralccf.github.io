@@ -1,0 +1,13 @@
+feral_inline:
+  process:
+    configuration_directory: '%kernel.project_dir%/var/processes'
+    included_sources:
+      - 'tagged_nodecode_source'
+      - 'tagged_catalog_source'
+
+services:
+  _instanceof:
+    Feral\Core\Process\NodeCode\NodeCodeInterface:
+      tags: [ 'feral.nodecode' ]
+    Feral\Core\Process\Catalog\CatalogSource\CatalogSourceInterface:
+      tags: [ 'feral.catalog_source' ]

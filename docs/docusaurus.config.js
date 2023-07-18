@@ -7,9 +7,9 @@ require('dotenv').config();
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Feral CCF',
+  title: 'Feral',
   tagline: 'The Code Composition Framework for the misfits, the dropouts, the freaks',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/FeralMark_01.png',
 
   // Set the production url of your site here
   url: 'https://feralccf.com',
@@ -64,12 +64,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/FeralLogo_02.png',
       navbar: {
-        title: 'Feral CCF',
+        title: 'Feral',
         logo: {
-          alt: 'Feral CCF Logo',
-          src: 'img/Feral-CCF-01.png',
+          alt: 'Feral Logo',
+          src: 'img/FeralMark_01.png',
         },
         items: [
           {

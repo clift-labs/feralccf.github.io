@@ -37,9 +37,16 @@ export default function Home() {
             <div className="row">
                 <div className={clsx('col col--4')}>
                     <div className="text--center padding-horiz--md">
-                        <h3>Who was Feral CCF built for?</h3>
-                        <p>For the past 23 years people have asked why I code in PHP. I'll admit, back in 2000 I really wanted to code in Java, so I did. I wrote a lot of Java, PERL, Javascript, Flex, whatever was 'hot' at the time. But, time after time I kept building projects in PHP. First PHP3, then PHP4, 5, 6 (just kidding), 7 and now PHP8.
-                            Time after time at tech conference, online, some asshole manager I was criticised for using PHP. At this point in my career I'm done with the programming language religious wars.</p>
+                        <h3>Who was Feral built for?</h3>
+                        <p>For the past 23 years, people have often questioned my choice of coding in PHP. I must
+                            confess that back in 2000, I had a strong desire to code in other languages, so I pursued it and
+                            worked extensively with Java, PERL, Javascript, Flex, and other trendy languages at the
+                            time. However, despite solving problems various programming options, I consistently found myself
+                            building projects using PHP. I started with PHP3, moved through PHP4, 5, 6 (just kidding),
+                            and now I'm on PHP8. Throughout my journey, whether at tech conferences, online platforms,
+                            or encountering critical managers, I have faced unwarranted criticism for my use of PHP.
+                            At this stage of my career, I have grown tired of engaging in programming language debates
+                            and just want to offer solutions using a friendly tool.</p>
                     </div>
                     <div className="text--center">
                         <img src='https://www.php.net/images/logos/new-php-logo.svg' width={120} />
@@ -48,22 +55,32 @@ export default function Home() {
                 <div className={clsx('col col--4')}>
                     <div className="text--center padding-horiz--md">
                         <h3>What is a Code Composition Framework (CCF)?</h3>
-                        <p>A CCF is a way to compose a process using reusable
-                            code contained inside a node. Data is read and written to a context that is passed between nodes. Once
-                            a node completes it code, it returns a result. The next nodes to be process is regulated by the result
-                            from the current node.</p>
+                        <p>A code composition framework is a powerful tool that enables developers to efficiently and
+                            effectively create and organize code components within a software project. It provides a
+                            structured approach to composing complex systems by offering a set of predefined patterns,
+                            guidelines, and libraries that promote modularization, reusability, and maintainability.
+                            With a code composition framework, developers can focus on assembling individual building
+                            blocks, such as functions, classes, or modules, and seamlessly integrate them into a
+                            cohesive and scalable application. By facilitating code organization and encouraging best
+                            practices, a code composition framework enhances developer productivity, fosters
+                            collaboration, and ultimately leads to the development of robust and flexible software
+                            solutions.</p>
                     </div>
                 </div>
                 <div className={clsx('col col--4')}>
                     <div className="text--center padding-horiz--md">
-                        <h3>Who should use Feral CCF?</h3>
-                        <p>Feral CCF should be used by Symfony Developers who wish to use
-                            reusable code in a structured, observable framework.</p>
+                        <h3>Who should use Feral?</h3>
                         <p>
-                            So you don't think a Code Composition Framework system should be written in PHP?? Fine, Piss off and Go Away.
-                        </p>
-                        <p>
-                            Feral is a Code Composition Framework written in PHP. This project is the free and open core which contains the basic tools for Feral.
+                            A code composition framework tailored for Symfony is ideally suited for developers who
+                            are building web applications or complex software systems using the PHP programming
+                            language. Symfony, being a widely adopted PHP framework, provides a solid foundation for
+                            developing robust, scalable, and maintainable applications. Therefore, developers who aim
+                            to leverage the benefits of Symfony's rich ecosystem and conventions should consider using
+                            a code composition framework built specifically for Symfony. This framework empowers
+                            Symfony developers by offering pre-defined architectural patterns, libraries, and best
+                            practices that facilitate code organization, modularity, and reusability. By utilizing
+                            this code composition framework, developers can streamline their development process,
+                            enhance code quality, and deliver high-performance Symfony applications.
                         </p>
                     </div>
                     <div className="text--center">
