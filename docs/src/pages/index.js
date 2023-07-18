@@ -30,8 +30,8 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`Making Software Feral Since 2022`}
+      description="The Code Composition Framework for the misfits, the dropouts, the freaks">
       <HomepageHeader />
         <div className={styles.topFeatures} >
             <div className="row">
