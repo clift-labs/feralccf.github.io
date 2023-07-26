@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[1584],{9734:e=>{e.exports=JSON.parse('{"title":"NodeCode","slug":"/category/nodecode","permalink":"/docs/category/nodecode","navigation":{"previous":{"title":"Reference","permalink":"/docs/category/reference"},"next":{"title":"calculation","permalink":"/docs/reference/node-code/CalculationNodeCode"}}}')}}]);
