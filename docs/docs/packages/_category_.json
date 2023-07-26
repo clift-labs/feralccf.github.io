@@ -1,0 +1,8 @@
+{
+  "label": "Packages",
+  "position": 99,
+  "link": {
+    "id": "package-index",
+    "type": "doc"
+  }
+}
