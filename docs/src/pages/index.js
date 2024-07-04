@@ -37,6 +37,30 @@ export default function Home() {
             <div className="row">
                 <div className={clsx('col col--4')}>
                     <div className="text--center padding-horiz--md">
+                        <h3>ChatGPT or GenAI?</h3>
+                        <p>Tune the GenAI solutions doing prompt engineering. Feral CCF is the perfect solution to build a workflow that modifies a prompt by including text in a prompt, modifying a prompt for better results, or including documents with the prompt.</p>
+                    </div>
+                </div>
+                <div className={clsx('col col--4')}>
+                    <div className="text--center padding-horiz--md">
+                        <h3>Webhooks?</h3>
+                        <p>For webhooks, which are essentially HTTP callbacks triggered by specific events, the Feral CCF shines with Symfony's built-in routing mechanism provided by the HTTP bundle. A Feral CCF process can be triggered in a controller and action for a route. Pass any parameters or body information into the context then let the nodes do their thing.</p>
+                    </div>
+                </div>
+                <div className={clsx('col col--4')}>
+                    <div className="text--center padding-horiz--md">
+                        <h3>APIs?</h3>
+                        <p>
+                           You can include Feral CCF processes to manage your API functionality. Feral CCF comes with a powerful process modification methood that allows for processes to be tweaked depending on certain criteria. You can have a customized process per customer, vendor, or any other criteria where processes need to be tweaked.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div className={styles.topFeatures} >
+            <div className="row">
+                <div className={clsx('col col--4')}>
+                    <div className="text--center padding-horiz--md">
                         <h3>Who was Feral built for?</h3>
                         <p>For the past 23 years, people have often questioned my choice of coding in PHP. I must
                             confess that back in 2000, I had a strong desire to code in other languages, so I pursued it and

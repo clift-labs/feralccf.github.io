@@ -47,9 +47,51 @@ method returns an array of [**`ConfigurationDescriptionInterface`**](https://git
 
 :::
 
+
+### Use configuration CNF to store paths to context CTX paths and values
+The `ContextInterface` is passed into the NodeCodeInterface::process method and contains data used by
+the method. Use the `ContextValueTrait` in your NodeCode to get helper methods which make
+it easy to get a value from the context.
+
+Use class constants for your path to get the value stored in the context. For keys to get values from 
+the configuration use `CNF_` which is short for configuration. For keys to get values from the context 
+use the prefix `CTX_`. For default values for either the configuration or the context include a `D` at
+the start of the prefix to designate it's a default value. For example a default path might be `DCTX_INPUT`
+with the value "input". Then the CatalogNode and ProcessNodes can set a different context path in the
+configuration if it provides unique locations for that particular node. 
+
+Imagine a NodeCode that calls a URL and the configuration contains the protocol, the host, and the
+path to make a complete URL. You could default the protocol with `DCNF_protocol` making it easier to
+create CatalogNodes and ProcessNodes by skipping that configuration value if it uses the standard "https"
+protocol. An example of a default context value might be a default boolean for a particular operation. 
+`DCTX_RESPONSE` could be set to "false" if the code should treat empty context values the same as a 
+"false" value stored in the context.
+
+It is common to allow the `CatalogNode` or `ProcessNode` to define the path in the context where
+the data is stored. Include a default value for the path making it easy to use but also configurable. In
+this case where the configuration sets the context path, include both `CNF_` and `CTX_` which designates
+configured context paths. The example below uses `CNF_CTX_INPUT` constant to set the path in the configuration
+to get the path of the context. Then to set the default prepend the `D` making the default
+configuration path for the context `DCNF_CTX_INPUT`.
+
+```php 
+...
+    const DCNF_CTX_INPUT = 'command_input'; // the default path to the context value
+    public const CNF_CTX_INPUT = 'input'; // the configuration path for the context path
+...
+    // From the configuration get the context path where the data is stored. 
+    // If the configuration is empty then use 'command_input' as the path in
+    // the context
+    $inputPath = $this->getRequiredConfigurationValue(self::CNF_CTX_INPUT, self::DCNF_INPUT);
+    
+    // Using the path stored in the configuration, get the data from the context
+    $input = $this->getStringValueFromContext($inputPath, $context);
+...
+```
+
 ## Configuration Value Modifier
 
-fy a configuration value. [ConfigurationValueModifierInterface](https://github.com/cybermantix/feral-core/blob/master/src/Process/NodeCode/Configuration/ValueModifier/ConfigurationValueModifierInterface.php) 
+To modify a configuration value [ConfigurationValueModifierInterface](https://github.com/cybermantix/feral-core/blob/master/src/Process/NodeCode/Configuration/ValueModifier/ConfigurationValueModifierInterface.php) 
 is the interface that can be used to modify a value. This can be used if a template variable or secret is used and replaced when
 the value is actually set.
 
@@ -102,3 +144,4 @@ To get all available NodeCode objects use the `getNodeCodes` method.
 
 See [**`NodeCodeFactory`**](https://github.com/cybermantix/feral-core/blob/master/src/Process/NodeCode/NodeCodeFactory.php) for details.
 :::
+

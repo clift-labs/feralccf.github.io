@@ -4,7 +4,7 @@ title: CatalogNode
 ---
 
 Catalog Nodes apply configuration to NodeCode allowing NodeCode to be reused in different
-ways. For example, the [ContextValueComparatorNodeCode](/docs/nodes/node-code/ContextValueComparatorNodeCode)
+ways. For example, the [ContextValueComparatorNodeCode](/docs/reference/node-code/ContextValueComparatorNodeCode)
 can have many Catalog Nodes that define different common comparators like `Greater Than Zero`, `Is Zero`
 or any other comparator that is based on a constant.
 
