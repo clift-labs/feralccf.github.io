@@ -6,8 +6,7 @@ tags:
 - Package:Core
 ---
 
-Create a counter that ticks every pass through the node. The default context
-path is `_counter` but can be changed in the configuration.
+Get Data using an HTTP request and store the results in a context variable.
 
 ## Key
 `http_data`

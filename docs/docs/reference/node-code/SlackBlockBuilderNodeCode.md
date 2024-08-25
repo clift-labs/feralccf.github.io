@@ -1,8 +1,8 @@
 ---
-title: start
+title: slack_block_builder
 tags:
 - Category:Flow
-- Package:Core
+- Package:Slack
 ---
 
 Start the process by returning the OK status.
@@ -18,6 +18,37 @@ Start the process by returning the OK status.
 
 ## Results
 * `ok` - The function has been run
+
+## Function Options
+
+* init
+  * Surface (optional)
+* add_button
+  * action_id
+  * label
+  * url (optional)
+  * value (optional)
+  * style (optional)
+
+## Example 
+The builder node starts with the init function followed by add function. Once the content
+is complete, call the build function.
+
+```mermaid
+flowchart LR
+%%NODES
+ A[init]
+ B[add image]
+ C[add text]
+ D[add button]
+ E[build]
+
+%%LINKS
+A-->B
+B-->C
+C-->D
+D-->E
+```
 
 ## Process Method
 ```php
