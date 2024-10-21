@@ -17,7 +17,7 @@ composer create-project symfony/skeleton:"7.1.*" my-app
 ### Step 2: Install Feral Inline
 ```shell
 # See packagist for the latest https://packagist.org/packages/feral/inline
-composer require feral/inline
+composer require feral/symfony
 ```
 
 ### Step 3: Create a new process 
