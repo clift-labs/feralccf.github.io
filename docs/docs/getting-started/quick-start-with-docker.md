@@ -77,13 +77,13 @@ make term
 At this point you should have two terminal windows or tabs. You can see the output of
 each container in the initial window.
 
-## Step 5: Install Symfony and Feral Inline
+## Step 5: Install Symfony and Feral Symfony
 
 :::caution
 Do this step from the Docker terminal window, in the right tab.
 :::
 
-The Makefile contains a target `install` which will install symfony and the feral-inline package.
+The Makefile contains a target `install` which will install symfony and the feral-symfony package.
 To run the install target, in the terminal window type `make install`.
 
 ```bash 
