@@ -11,7 +11,7 @@ Feral is written in PHP and uses Composer and Symfony. Getting started with the 
 ### Step 1: Start a new symfony project
 ```shell
 # Change the skeleton version to the latest https://packagist.org/packages/symfony/skeleton
-composer create-project symfony/skeleton:"6.2.*" my-app
+composer create-project symfony/skeleton:"7.1.*" my-app
 ```
 
 ### Step 2: Install Feral Inline
